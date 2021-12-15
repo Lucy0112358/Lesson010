@@ -42,3 +42,26 @@ let job = person.job
 console.log(name);
 console.log(country);
 console.log(job);
+
+// Task 8
+let person1 = { anun: "Sarah", erkir: "Nigeria", qorc: "Developer" };
+let { anun, erkir, qorc } = person1;
+console.log(anun);
+
+// Task 9
+function getVoteCount(object){
+    let sum = object.upvotes-object.downvotes
+return sum
+}
+console.log(getVoteCount({ upvotes: 2, downvotes: 33 }))
+
+// Task 10
+function countRevenue(ati){
+    obj = {
+        "Needs": ati*0.5,
+        "Wants": ati*0.3,
+        "Debts": ati*0.2
+    }
+    return obj
+}
+console.log(countRevenue(10000))
